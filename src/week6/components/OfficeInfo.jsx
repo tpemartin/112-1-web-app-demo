@@ -1,13 +1,14 @@
 import { Avatar, Paper, Stack, Typography } from "@mui/material";
 import EmailIcon from '@mui/icons-material/Email';
 import PhoneIcon from '@mui/icons-material/Phone';
+import OutOfOffice from "./OutOfOffice";
 
 export default function OfficeInformation({ imgLink, title, name, officeHour, email, phone, office }) {
     return (
         <>
         <Paper elevation={3} sx={{p: 2, maxWidth: "500px", height: "700px"}}>
             <OfficeInfoHeader imgLink={imgLink} name={name} title={title} email={email} phone={phone} />
-            
+            <OutOfOffice/>
         </Paper>
         </>
     )
